@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion"
+import './navbutton.css'
 
 function Navbutton (){
     return (
         <>
-        <button>NavButton</button>
+        <button className="navbutton">NavButton</button>
         </>
     )
 }

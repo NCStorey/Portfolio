@@ -1,0 +1,19 @@
+.navbutton{
+
+    background: none;
+    border: none;
+
+}
+
+
+@media (min-width:992px){
+
+.navbutton{
+    height: 2rem;
+    width:6rem;
+    margin: 0.5rem;
+    background-color:none;
+    color: #37504e;
+    border: solid #37504E;
+    border-radius: 50px;
+}}
