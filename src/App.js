@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbutton from './components/navbutton/navbutton';
 
 function App() {
   return (
-    <h1>
-      Nathalie Storey
-    </h1>
+    <>
+      <Navbutton />
+    </>
   );
 }
 
