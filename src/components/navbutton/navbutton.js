@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion"
 import './navbutton.css'
 
-function Navbutton (){
+function Navbutton (props){
     return (
         <>
-        <button className="navbutton">NavButton</button>
+        <button className="navbutton">{props.navtitle}</button>
         </>
     )
 }

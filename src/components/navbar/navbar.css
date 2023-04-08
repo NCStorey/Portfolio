@@ -1,6 +1,33 @@
 .navbar-brand{
     font-family: 'Allison';
+    color: aliceblue !important;
     font-size: 6rem;
     margin-top: -20px;
     margin-bottom: -20px;
 }
+
+.navbar{
+    background-image: url(../../../public/images/pawel-czerwinski-Moiprruv4Rw-unsplash.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link{
+
+    background: none;
+    border: none;
+    color: aliceblue !important;
+    margin-left: 0.9rem;
+
+}
+
+.navbar-toggler{
+    color: aliceblue !important;
+    background-color: aliceblue;
+}
+
+#navlinkcont{
+    display: flex;
+    justify-content: end;
+}
+
