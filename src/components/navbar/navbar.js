@@ -29,14 +29,14 @@ function Navbar (){
 
                 {/* nav link */}
                 <li className="nav-item">
-                    <Navbutton navtitle='Home'/>
+                    <Navbutton navtitle='Home' id='projectmenulabel'/>
                 </li>
 
                 {/* drop down menu */}
                 <li className="nav-item dropdown">
                     
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projects
+                    <a className="nav-link dropdown-toggle projectmenulabel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <Navbutton navtitle='Projects'/>
                     </a>
 
                     {/* items on drop down menu for projects */}

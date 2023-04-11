@@ -6,6 +6,10 @@
     margin-bottom: -20px;
 }
 
+@media only screen and (max-width: 576px){
+    .navbar-brand{font-size: 5rem;}
+}
+
 .navbar{
     background-image: url(../../../public/images/pawel-czerwinski-Moiprruv4Rw-unsplash.2.jpg);
     background-size: cover;
@@ -17,8 +21,14 @@
     background: none;
     border: none;
     color: aliceblue !important;
-    margin-left: 0.9rem;
+}
 
+.projectmenulabel{
+    margin-top: -7px
+}
+
+@media only screen and (max-width: 992px){
+    .projectmenulabel{margin-top: 0px}
 }
 
 .navbar-toggler{
@@ -29,5 +39,9 @@
 #navlinkcont{
     display: flex;
     justify-content: end;
+}
+
+.dropdown-item:hover{
+    background-color: black;
 }
 

@@ -5,7 +5,10 @@ import './navbutton.css'
 function Navbutton (props){
     return (
         <>
-        <button className="navbutton">{props.navtitle}</button>
+        <motion.button className="navbutton"
+        whileTap={{ scale: 0.6 }}>
+            {props.navtitle}
+            </motion.button>
         </>
     )
 }
