@@ -6,16 +6,15 @@ function BrandName () {
 
     const brandname = ['N','a','t','h','a','l','i','e',' ','S','t','o','r','e','y']
 
-    for (let i = 0; i<brandname.length; i++){
-        
-    }
+    const brandnameelements = brandname.map((letter) =>
+    <span>{letter}</span>) 
 
 
 
     return(
-        <>
-        <h1 className="brand">{brandname}</h1>
-        </>
+        <div className="brand">
+        {brandnameelements}
+        </div>
     )
 
 }
