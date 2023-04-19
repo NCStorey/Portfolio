@@ -1,6 +1,7 @@
 import React from "react";
 import './navbar.css';
 import '../navbutton/navbutton.js';
+import BrandName from "../brandname/brandname";
 import Navbutton from "../navbutton/navbutton.js";
 
 
@@ -12,8 +13,8 @@ function Navbar (){
     <div className="container-fluid">
 
         {/* brand button */}
-        <a className="navbar-brand" href="#">Nathalie Storey</a>
-
+        <BrandName className="navbar-brand" />
+        
         {/* button controls for hamburger menu*/}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
