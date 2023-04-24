@@ -2,13 +2,17 @@
     background-color:black;
 }
 
+.homeflex{
+    justify-items: space-evenly !important;
+
+}
+
 .hook{
     border: solid white 2px;
     margin-top: 50px;
     height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+
 }
 
 .hookText{
@@ -18,22 +22,28 @@
 
 .profilePictureCont{
     border: solid white 2px;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
+
 
 }
 
 .profileImage{
-    width: 30rem;
+    width: 70%;
     border-radius: 15rem;
     margin-top: 50px;
+
 }
 
 .intro{
     border: solid white 2px;
-    height: 40rem;
+    /* height: 40rem; */
     padding-top: 50px;
     color: aliceblue;
     font-size: 1.5rem;
+    background-color:rgba(240, 248, 255, 0.1);
+}
+
+.subtitle{
+    font-family: 'Allison';
+    text-align: center !important;
+    font-size: 3.1rem;
 }
