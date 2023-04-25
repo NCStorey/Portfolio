@@ -2,17 +2,12 @@
     background-color:black;
 }
 
-.homeflex{
-    justify-items: space-evenly !important;
-
-}
-
 .hook{
+    padding-top: 50px;
     border: solid white 2px;
-    margin-top: 50px;
     height: 15rem;
-    
-
+    display: flex;
+    justify-content: space-around;
 }
 
 .hookText{
@@ -20,30 +15,42 @@
     font-size: 4.5rem;
 }
 
+.introContFlex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* @media only screen and (max-width: 1000px){
+    .introContFlex{flex-direction: column;}
+} */
+
 .profilePictureCont{
     border: solid white 2px;
-
-
+    padding: 50px;
 }
 
 .profileImage{
-    width: 70%;
-    border-radius: 15rem;
-    margin-top: 50px;
+    display: block;
+    width: 100%;
+    min-width: 30rem;
+    height: auto; 
+    border-radius: 50%;    
+}
 
+@media only screen and (max-width: 1000px){
+    .profileImage{min-width: 20rem;}
 }
 
 .intro{
     border: solid white 2px;
-    /* height: 40rem; */
-    padding-top: 50px;
+
     color: aliceblue;
     font-size: 1.5rem;
-    background-color:rgba(240, 248, 255, 0.1);
+    background-color:rgba(240, 248, 255, 0.2);
 }
 
 .subtitle{
     font-family: 'Allison';
-    text-align: center !important;
     font-size: 3.1rem;
 }
