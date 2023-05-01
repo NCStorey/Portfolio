@@ -4,8 +4,6 @@
 
 .hook{
     padding-top: 50px;
-    border: solid white 2px;
-    height: 15rem;
     display: flex;
     justify-content: space-around;
 }
@@ -15,18 +13,25 @@
     font-size: 4.5rem;
 }
 
+@media only screen and (max-width: 700px){
+    .hookText{font-size: 3rem;}
+}
+
+@media only screen and (min-width: 1000px){
+    .hook{margin-bottom:2rem;}
+}
+
 .introContFlex{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* @media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px){
     .introContFlex{flex-direction: column;}
-} */
+}
 
 .profilePictureCont{
-    border: solid white 2px;
     padding: 50px;
 }
 
@@ -38,13 +43,18 @@
     border-radius: 50%;    
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .profileImage{min-width: 20rem;}
 }
 
-.intro{
-    border: solid white 2px;
+@media only screen and (max-width: 1000px){
+    .profileImage{max-width: 20rem;}
+}
 
+
+.intro{
+    padding: 0.5rem;
+    margin:1rem;
     color: aliceblue;
     font-size: 1.5rem;
     background-color:rgba(240, 248, 255, 0.2);
