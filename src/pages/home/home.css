@@ -64,6 +64,11 @@
     -0px -0px 20px 25px rgba(240, 248, 255, 0.11);
 }
 
+@media only screen and (max-width: 1000px){
+    .intro {margin-left: 4rem;}
+}
+
+
 .subtitle{
     font-family: 'Allison';
     font-size: 3.1rem;
