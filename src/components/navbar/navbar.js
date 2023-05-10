@@ -3,7 +3,7 @@ import './navbar.css';
 import '../navbutton/navbutton.js';
 import BrandName from "../brandname/brandname";
 import Navbutton from "../navbutton/navbutton.js";
-
+import {Link } from "react-router-dom";
 
 function Navbar (){
 
@@ -30,41 +30,41 @@ function Navbar (){
 
                 {/* nav link */}
                 <li className="nav-item">
-                    <Navbutton navtitle='Home' id='projectmenulabel'/>
+                    <Link to="/"><Navbutton navtitle='Home' id='projectmenulabel'/></Link>
                 </li>
 
                 {/* drop down menu */}
                 <li className="nav-item dropdown">
                     
-                    <a className="nav-link dropdown-toggle projectmenulabel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button className="nav-link dropdown-toggle projectmenulabel" data-bs-toggle="dropdown" aria-expanded="false">
                     <Navbutton navtitle='Projects'/>
-                    </a>
+                    </button>
 
                     {/* items on drop down menu for projects */}
                     <ul className="dropdown-menu">
 
-                        <li><a className="dropdown-item" href="#">Gallery</a></li>
+                        <li><Link to='/gallery' className="galleryButton"><button className="dropdown-item">Gallery</button></Link></li>
 
                         {/* divider for drop down list */}
                         <li><hr className="dropdown-divider" /></li>
 
-                        <li><a className="dropdown-item" href="#">The Spark App</a></li>
-                        <li><a className="dropdown-item" href="#">Wayfaring App</a></li>
-                        <li><a className="dropdown-item" href="#">Weather App</a></li>
-                        <li><a className="dropdown-item" href="#">Work Calendar</a></li>
-                        <li><a className="dropdown-item" href="#">Team Generator</a></li>
-                        <li><a className="dropdown-item" href="#">Password Generator</a></li>
-                        <li><a className="dropdown-item" href="#">Code Quiz</a></li>
+                        <li><a className="dropdown-item" href="https://soft-longma-6bf6bc.netlify.app/" target="_blank" rel="noopener noreferrer">The Spark App</a></li>
+                        <li><a className="dropdown-item" href="https://tomking1983.github.io/wayfaring/" target="_blank" rel="noopener noreferrer">Wayfaring App</a></li>
+                        <li><a className="dropdown-item" href="https://ncstorey.github.io/Weather-App-WC8/" target="_blank" rel="noopener noreferrer">Weather App</a></li>
+                        <li><a className="dropdown-item" href="https://ncstorey.github.io/CalenderApp-WC7/" target="_blank" rel="noopener noreferrer">Work Calendar</a></li>
+                        <li><a className="dropdown-item" href="https://github.com/NCStorey/Team-profile-generator-WC12.git" target="_blank" rel="noopener noreferrer">Team Generator</a></li>
+                        <li><a className="dropdown-item" href="https://ncstorey.github.io/PasswordGenerator-WC5/" target="_blank" rel="noopener noreferrer">Password Generator</a></li>
+                        <li><a className="dropdown-item" href="https://ncstorey.github.io/Code-Quiz---WC6/" target="_blank" rel="noopener noreferrer">Code Quiz</a></li>
 
                     </ul>
                 </li>
 
                 <li className="nav-item">
-                    <Navbutton navtitle='About Me'/>
+                    <Link to='aboutme'><Navbutton navtitle='About Me'/></Link>
                 </li>
 
                 <li className="nav-item">
-                    <Navbutton navtitle='Contact'/>
+                    <Link to='contact'><Navbutton navtitle='Contact'/></Link>
                 </li>
             </ul>
         </div>

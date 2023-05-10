@@ -27,7 +27,7 @@
 
 #navlinkcont{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .dropdown-item:hover{
@@ -35,3 +35,6 @@
     color: aliceblue;
 }
 
+.galleryButton{
+    text-decoration: none !important;
+}
