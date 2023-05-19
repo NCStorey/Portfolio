@@ -1,11 +1,19 @@
 import React from 'react';
-
+import profilePic from './charlotte-luke-hollyclarkphotography-h-905.jpg'
+import './aboutme.css'
 
 
 function AboutMe() {
   return (
     <>
-      <h1>aboutme</h1>
+      <div id='AboutMeFirstCont'>
+        <div id='profileImageAboutMeCont'>
+          <img src={profilePic} alt='Nathalie Storey' id='profileImageAboutMe'></img>
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
     </>
   );
 }

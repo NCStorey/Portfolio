@@ -1,0 +1,21 @@
+#AboutMeFirstCont{
+    display: flex;
+    background-color: black
+}
+
+
+#profileImageAboutMeCont{
+    width: 50%;
+}
+
+#profileImageAboutMe{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 
+    0px 0px 20px 25px rgba(240, 248, 255, 0.11) ,
+    -0px -0px 20px 25px rgba(240, 248, 255, 0.11);
+}
