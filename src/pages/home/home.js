@@ -19,7 +19,7 @@ function Home() {
             <img src={profilePic} alt='Nathalie Storey' className='profileImage'></img>
           </div>
 
-          <div className='intro'>
+          <div id='intro' className='text'>
             <p>Firstly thank you for taking the time to visit. I am new to the world of front end development and still finding my way. 
             </p>
               
