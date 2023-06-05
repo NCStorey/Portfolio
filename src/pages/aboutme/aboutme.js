@@ -13,6 +13,7 @@ function AboutMe() {
 
   return (
     <>
+    <div className='mainCont'>
       <div className='AboutMeCont' id='aboutMeFirstCont'>
 
         <div id='profileImageAboutMeCont'>
@@ -33,11 +34,13 @@ function AboutMe() {
 
       </div>
 
-      <div className='AboutMeCont' id='aboutMeSecondCont' ref={aboutMeSecondContRef}>
+      <div className={`aboutMeSecondCont AboutMeCont ${secondContIsVisible ? 'AboutMeContAnim' : ''}`} ref={aboutMeSecondContRef}>
         <img src={pic2} alt='Nathalie Storey holding an owl' className='aboutMePic'></img>
         <img src={pic3} alt='Nathalie Storey standing in a play castle' className='aboutMePic'></img>
         <img src={pic4} alt='Nathalie Storey sitting with presents on the floor' className='aboutMePic'></img>
       </div>
+
+    </div>
     </>
   );
 }

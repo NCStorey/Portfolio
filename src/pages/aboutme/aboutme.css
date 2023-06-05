@@ -1,6 +1,9 @@
+.mainCont{
+    background-color: black;
+}
+
 .AboutMeCont{
     display: flex;
-    background-color: black;
     width: 100%;
     padding-top: 80px;
 }
@@ -34,10 +37,25 @@
     margin-right: 1rem;
 }
 
-#aboutMeSecondCont{
+.aboutMeSecondCont{
     justify-content:space-evenly;
     padding-top: 80px;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
 }
+
+.AboutMeContAnim{
+    justify-content:space-evenly;
+    padding-top: 80px;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+
 
 .aboutMePic{
     width:25%;
