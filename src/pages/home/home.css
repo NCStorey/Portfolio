@@ -6,6 +6,8 @@
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
+    font-family: 'Raleway';
+    
 }
 
 .hookText{
@@ -73,7 +75,7 @@
 
 
 .subtitle{
-    font-family: 'Allison';
+    font-family: 'Reenie Beanie';
     font-size: 3.5rem;
     color: aliceblue;
 }

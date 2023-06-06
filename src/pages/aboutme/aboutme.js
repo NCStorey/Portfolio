@@ -1,4 +1,3 @@
-import {useRef, useEffect, useState} from 'react';
 import { useInView } from 'react-intersection-observer';
 import profilePic from './charlotte-luke-hollyclarkphotography-h-905.jpg'
 import pic2 from './IMG-20220601-WA0010.jpg'
@@ -9,7 +8,7 @@ import './aboutme.css'
 
 function AboutMe() {
 
-  const {ref: aboutMeSecondContRef, inView: secondContIsVisible} = useInView();
+  const {ref: aboutMeSecondContRef, inView: secondContIsVisible} = useInView({threshold: 0.5, triggerOnce: true});
 
   return (
     <>
@@ -33,6 +32,8 @@ function AboutMe() {
         </div>
 
       </div>
+
+      <span></span>
 
       <div className={`aboutMeSecondCont AboutMeCont ${secondContIsVisible ? 'AboutMeContAnim' : ''}`} ref={aboutMeSecondContRef}>
         <img src={pic2} alt='Nathalie Storey holding an owl' className='aboutMePic'></img>

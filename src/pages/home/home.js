@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css'
 import profilePic from './charlotte-luke-hollyclarkphotography-h-905.jpg'
+import BrandName from "../../components/brandname/brandname";
 
 
 function Home() {
@@ -9,9 +10,11 @@ function Home() {
 
     <div className='home'> 
 
-        <div className='hook'>
+        {/* <div className='hook'>
           <span className='hookText'><span >Hey,</span><span> nice to see you</span></span>
-        </div>
+        </div> */}
+
+        <BrandName/>
 
         <div className='introContFlex'>
           
